@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>registration</title>
+  <style>
+    
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0e6f5; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.border {
+    background-color: #87bde0; /* Blue background for the form container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Header */
+.header .word {
+    font-size: 28px;
+    color: #003d5c; /* Darker blue for the header text */
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.textbox {
+    width: 80%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #005073; /* Darker blue for the border */
+    border-radius: 6px;
+    background-color: #d9effc; /* Light blue input background */
+}
+
+.textbox:focus {
+    outline: none;
+    border-color: #002840; /* Darker focus color */
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+}
+
+/* Button Styling */
+.btn {
+    background-color: #005073; /* Dark blue button */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #003d5c; /* Darker hover color */
+}
+
+/* Bottom Text */
+.bottom {
+    font-size: 14px;
+    color: #003d5c;
+    margin-top: 15px;
+}
+
+.bottom a {
+    color: #003d5c;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+  </style>
+  
+</head>
+<body>
+
+
+|<h2 class="word"></h2>
+<form action="/register" method="POST">
+<div class="msg">{{msg}}</div>
+<input id="username" name="username" type="text" placeholder="Enter your username" class="textbox"/> </br>
+</br>
+<input id="password" name="password" type="text" placeholder="Enter your Password" class="textbox" /> </br>
+</br>
+<input id="email" name="email" type="text" placeholder="Enter your Email" class="textbox" /> </br></br> <input type="submit" value="Sign Up" class="btn"/> </br> </br>
+</form>
+<p class="bottom"> Already have account? <a class="bottom" href="/login"> Sign In here </a>
+</body>
+    </html>
